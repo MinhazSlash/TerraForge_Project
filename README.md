@@ -1,25 +1,24 @@
-TerraForge Pro - Split Project
-
-This project is a split version of the single-file TerraForge_Pro.cpp you provided.
-Files are separated by functionality (terrain, shader, weather, camera, tide, main) to make
-navigation and maintenance easier while preserving original behavior and visual quality.
-
-Build (macOS example):
-    make
-
-Run:
-    ./TerraForge_Pro
-
-Controls:
-    1: Day | 2: Sunset | 3: Night
-    R: Toggle Rain
-    F: Toggle Fog
-    WASD / Mouse: Move camera (first-person)
-
-
-Improvements added in this final split:
-- Night lighting slightly brightened so terrain features remain visible.
-- Rain rendering adjusted to be clearly visible at night (brighter streaks + subtle glow).
-- Tide control added: Z (tide down), X (tide up).
-
-Note: I kept all core visuals and shader code behavior identical where possible; changes are conservative and only tweak lighting, fog, and rain draw passes for better night readability.
+TerraForge is a C++ based computer graphics project developed using the raylib library. The
+project simulates an interactive 3D environment featuring procedural terrain generation, real-time
+camera movement, environmental effects such as rain and fog, dynamic tide level control, and
+day-night lighting transitions.
+Objectives
+The main objectives of this project are:
+- To implement a real-time 3D graphics scene using OpenGL through raylib
+- To demonstrate terrain generation and environmental animation
+- To apply camera transformations and shader-based rendering
+- To simulate realistic environmental effects
+- To practice collaborative development using Git and GitHub
+Key Features
+- Day, evening, and night lighting cycle
+- Fog on and off toggle
+- Rain on and off toggle
+- 360 degree free camera movement
+- Dynamic tide level rising and falling
+- Shader-based lighting effects
+Technologies Used
+Programming Language: C++
+Graphics Library: raylib
+Rendering API: OpenGL (via raylib)
+Build System: Makefile
+Version Control: Git and GitHub
